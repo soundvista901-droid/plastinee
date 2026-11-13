@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pasteline – Wall stickers that peel, press and stay</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap bar">
+<a class="logo" href="#top"><i></i>Pasteline</a>
+<nav><a href="#shop">Shop</a><a href="#how">How it works</a><a href="#news">Offers</a></nav>
+<button class="ib t" id="theme" aria-label="Toggle dark mode">◐</button>
+<button class="ib" id="cartBtn" aria-label="Open cart">Cart <span class="badge" id="count">0</span></button>
+</div></header>
+
+<main id="top">
+<div class="wrap hero">
+<div>
+<h1>Walls that look lived in, not just painted.</h1>
+<p>Hand-drawn wall stickers in matte vinyl. Peel, press, reposition as often as you like, and take them off without a mark.</p>
+<a class="btn" href="#shop">Shop stickers</a><a class="btn alt" href="#how">How it works</a>
+</div>
+<div class="wall" id="wall" aria-label="Interactive wall: click a sticker to peel it off"><div class="hint">Click a sticker to peel it off</div></div>
+</div>
+
+<section id="shop"><div class="wrap">
+<div class="head"><h2>The collection</h2>
+<div class="tools" id="chips"></div>
+<label>Sort <select id="sort"><option value="f">Featured</option><option value="l">Price: low to high</option><option value="h">Price: high to low</option></select></label></div>
+<div class="grid" id="grid"></div>
+</div></section>
+
+<section id="how"><div class="wrap">
+<div class="head"><h2>Three steps to a new wall</h2></div>
+<div class="steps">
+<div class="step"><h3>Pick a sticker</h3><p>Choose a design and a size: 10 cm for accents, 20 cm for a corner, 40 cm for a feature wall.</p></div>
+<div class="step"><h3>Peel the backing</h3><p>Matte vinyl with a low-tack adhesive. It repositions until you press it down firmly.</p></div>
+<div class="step"><h3>Press and smooth</h3><p>Work from the centre outwards with a dry cloth. Removal leaves no residue on painted walls.</p></div>
+</div></div></section>
+
+<section id="news"><div class="wrap"><div class="news">
+<h2>Get 10% off your first order</h2>
+<form id="nf"><input type="email" required placeholder="you@example.com" aria-label="Email"><button class="add" type="submit">Get my code</button></form>
+</div></div></section>
+</main>
+<footer>© 2026 Pasteline. Free shipping on orders over ₹999 across India.</footer>
+
+<div class="ov" id="ov"></div>
+<aside class="drawer" id="drawer" aria-label="Cart">
+<div class="dh"><h2>Your cart</h2><button class="ib" id="close" aria-label="Close cart">✕</button></div>
+<div class="items" id="items"></div>
+<div class="sum" id="sum"></div>
+</aside>
+<div class="modal" id="modal" role="dialog" aria-modal="true"></div>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
